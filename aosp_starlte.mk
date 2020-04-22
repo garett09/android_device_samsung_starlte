@@ -24,19 +24,29 @@ $(call inherit-product, device/samsung/starlte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := starlte
-PRODUCT_NAME := lineage_starlte
+PRODUCT_NAME := aosp_starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXU7DTAA:user/release-keys
+#Evo specific
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+
+#Maintainer
+EVO_DONATE_URL := https://www.paypal.me/yarpiin
+EVO_MAINTAINER := yarpiin
+EVO_SUPPORT_URL := https://t.me/joinchat/DNkhGFMc-o5FP9qSwz-4og
+
+# add fingerprint override to pass cts
+BUILD_FINGERPRINT := samsung/starltexx/starlte:8.0.0/R16NW/G960FXXU1ARCC:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRODUCT_NAME=starltexx \
-        PRIVATE_BUILD_DESC="starltexx-user 10 QP1A.190711.020 G960FXXU7DTAA release-keys"
+        PRODUCT_NAME=star2ltexx \
+                PRIVATE_BUILD_DESC="starltexx-user 8.0.0 R16NW G960FXXU1ARCC release-keys"
