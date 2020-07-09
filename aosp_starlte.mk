@@ -45,7 +45,7 @@ EVO_MAINTAINER := yarpiin
 EVO_SUPPORT_URL := https://t.me/joinchat/DNkhGFMc-o5FP9qSwz-4og
 
 # add fingerprint override to pass cts
-BUILD_FINGERPRINT := samsung/starltexx/starlte:8.0.0/R16NW/G960FXXU1ARCC:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=star2ltexx \
