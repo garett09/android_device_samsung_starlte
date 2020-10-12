@@ -24,11 +24,11 @@ $(call inherit-product, device/samsung/starlte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := starlte
-PRODUCT_NAME := lineage_starlte
+PRODUCT_NAME := aosp_starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
 PRODUCT_MANUFACTURER := samsung
@@ -36,6 +36,10 @@ PRODUCT_PDA_MODEL := G960F
 PRODUCT_PDA_MODEL_VERSION := XXU7DTB4
 PRODUCT_PDA_VERSION := $(PRODUCT_PDA_MODEL)$(PRODUCT_PDA_MODEL_VERSION)
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
+#PE specific
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
 
 BUILD_FINGERPRINT := samsung/starltexx/starlte:10/QP1A.190711.020/$(PRODUCT_PDA_VERSION):user/release-keys
 
