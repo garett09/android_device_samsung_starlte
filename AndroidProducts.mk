@@ -15,5 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_starlte.mk
-
+    $(LOCAL_DIR)/evolution_starlte.mk
