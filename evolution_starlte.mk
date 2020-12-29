@@ -50,3 +50,6 @@ BUILD_FINGERPRINT := google/redfin/redfin:11/RQ1A.201205.010/6953398:user/releas
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=starltexx \
                 PRIVATE_BUILD_DESC="star2ltexx-user 10 QP1A.190711.020 G965FXXUCFTK1 release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    evolution.updater.uri=https://raw.githubusercontent.com/garett09/ROM_RELEASES/elle/starlte.json
