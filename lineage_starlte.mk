@@ -35,7 +35,7 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXUCFTK1:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=starltexx \
